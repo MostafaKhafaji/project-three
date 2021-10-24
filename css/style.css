@@ -220,7 +220,7 @@ ul {
         flex-direction: column;
         z-index: 99;
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         top: 0;
         left: 100%;
         background-color: white;
@@ -294,10 +294,9 @@ ul {
     .header .main-nav>li>a {
         font-weight: bold;
         color: var(--main-color);
-        padding: 10px;
         height: 40px;
         font-size: 20px;
-        padding: 30px;
+        padding: 25px;
     }
 }
 
@@ -365,7 +364,7 @@ ul {
 @media (max-width:991px) {
     .header .mega-menu {
         flex-direction: column;
-        gap: 5px;
+        gap: 0;
         margin-top: 5px;
         display: none;
     }
@@ -467,7 +466,7 @@ ul {
 }
 
 .landing .text p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.7;
     margin: 5px 0 0;
     color: #666;
@@ -476,13 +475,13 @@ ul {
 }
 
 .landing .text h1 {
-    font-size: 28px;
+    font-size: 25px;
     margin: 0;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     border-right: 1px solid var(--main-color);
-    animation: control-width 7s steps(30) 2s both infinite, blink 0.5s infinite;
+    animation: control-width 7s steps(35) both infinite, blink 0.5s infinite;
 }
 
 @media (max-width:919px) {
@@ -493,7 +492,6 @@ ul {
         margin: 10px auto;
     }
     .landing .text h1 {
-        font-size: 28px;
         margin: 0 auto;
     }
 }
@@ -2077,7 +2075,7 @@ ul {
         width: 0px;
     }
     to {
-        width: 380px;
+        width: 330px;
     }
 }
 

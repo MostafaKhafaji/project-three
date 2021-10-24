@@ -220,7 +220,7 @@ ul {
         flex-direction: column;
         z-index: 99;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         top: 0;
         left: 100%;
         background-color: white;
@@ -467,17 +467,22 @@ ul {
 }
 
 .landing .text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7;
     margin: 5px 0 0;
     color: #666;
     max-width: 500px;
+    margin-top: 10px;
 }
 
 .landing .text h1 {
-    font-size: 35px;
+    font-size: 28px;
     margin: 0;
-    letter-spacing: -1px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid var(--main-color);
+    animation: control-width 7s steps(30) 2s both infinite, blink 0.5s infinite;
 }
 
 @media (max-width:919px) {
@@ -489,6 +494,7 @@ ul {
     }
     .landing .text h1 {
         font-size: 28px;
+        margin: 0 auto;
     }
 }
 
@@ -2063,6 +2069,24 @@ ul {
     }
     50% {
         background-image: url("../images/discount-background2.jpg");
+    }
+}
+
+@keyframes control-width {
+    form {
+        width: 0px;
+    }
+    to {
+        width: 380px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: var(--main-color);
+    }
+    to {
+        border-right-color: transparent;
     }
 }
 

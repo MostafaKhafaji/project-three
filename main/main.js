@@ -1,5 +1,5 @@
 let scrollTop = document.querySelector(".scroll-top");
-console.log(scrollTop);
+
 window.addEventListener("scroll", function() {
     if (this.scrollY >= 600) {
         scrollTop.style.display = "flex";
@@ -15,5 +15,24 @@ window.addEventListener("scroll", function() {
 scrollTop.addEventListener("click", function() {
     window.scrollTo({
         top: 0,
+    });
+});
+
+let slider = document.querySelector("#nav-button");
+let nav = document.querySelector(".main-nav");
+let exit = document.querySelector(".cross");
+let links = document.querySelectorAll(".active");
+
+slider.addEventListener("click", function() {
+    nav.classList.toggle("slider");
+});
+
+exit.addEventListener("click", function() {
+    nav.classList.toggle("slider");
+});
+
+links.forEach((element) => {
+    element.addEventListener("click", function() {
+        nav.classList.remove("slider");
     });
 });
